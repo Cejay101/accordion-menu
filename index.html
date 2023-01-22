@@ -1,58 +1,106 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./style.css">
- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+    <link rel="stylesheet" href="./style.css" />
 
-  <script defer src="./script.js"></script>
-</head>
-<body>
- <h2>Favorite books</h2>
-<ul class="accordion-menu">
-  <li>
-    <div class="dropdownlink"><i class="fa fa-road" aria-hidden="true"></i> History
-      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-    </div>
-    <ul class="submenuItems">
-      <li><a href="#">History book 1</a></li>
-      <li><a href="#">History book 2</a></li>
-      <li><a href="#">History book 3</a></li>
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <ul class="accordion-menu">
+      <li>
+        <div class="dropdownlink">
+          <div class="menu_head">
+            <lord-icon
+              src="https://cdn.lordicon.com/dtgezzsi.json"
+              trigger="hover"
+              colors="primary:#e4e4e4,secondary:#ffffff"
+              style="width: 60px; height: 60px"
+            >
+            </lord-icon>
+            <span>Programming Languages</span>
+          </div>
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <ul class="submenuItems">
+          <li>
+            <a href="#">JavaScript</a>
+          </li>
+          <li><a href="#">Python</a></li>
+          <li><a href="#">C++</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdownlink">
+          <div class="menu_head">
+           <lord-icon
+    src="https://cdn.lordicon.com/edxgdhxu.json"
+    trigger="hover"
+    colors="primary:#ffffff,secondary:#e4e4e4"
+    style="width:60px;height:50px">
+</lord-icon>
+            <span> UI/UX</span>
+          </div>
+
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <ul class="submenuItems">
+          <li><a href="#">Adobe XD</a></li>
+          <li><a href="#">Figma</a></li>
+          <li><a href="#">Sketch</a></li>
+          <li><a href="#">InVision Studio</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdownlink">
+          <div class="menu_head">
+            <lord-icon
+    src="https://cdn.lordicon.com/hiqmdfkt.json"
+    trigger="hover"
+    colors="primary:#ffffff,secondary:#e4e4e4"
+    style="width:60px;height:55px">
+</lord-icon>
+            <span>
+ Technical Writing
+            </span>
+
+          </div>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <ul class="submenuItems">
+          <li><a href="#">Hashnode</a></li>
+          <li><a href="#">Medium</a></li>
+          <li><a href="#">FreeCodeCamp</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="dropdownlink">
+          <div class="menu_head">
+            <lord-icon
+    src="https://cdn.lordicon.com/ljvjsnvh.json"
+    trigger="hover"
+    colors="primary:#ffffff,secondary:#e4e4e4"
+    style="width:60px;height:50px">
+</lord-icon>
+            <span> Social Media </span>
+          </div>
+
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </div>
+        <ul class="submenuItems">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </li>
     </ul>
-  </li>
-  <li>
-    <div class="dropdownlink"><i class="fa fa-paper-plane" aria-hidden="true"></i> Fiction
-      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-    </div>
-    <ul class="submenuItems">
-      <li><a href="#">Fiction book 1</a></li>
-      <li><a href="#">Fiction book 2</a></li>
-      <li><a href="#">Fiction book 3</a></li>
-    </ul>
-  </li>
-  <li>
-    <div class="dropdownlink"><i class="fa fa-quote-left" aria-hidden="true"></i> Fantasy
-      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-    </div>
-    <ul class="submenuItems">
-      <li><a href="#">Fantasy book 1</a></li>
-      <li><a href="#">Fantasy book 2</a></li>
-      <li><a href="#">Fantasy book 3</a></li>
-    </ul>
-  </li>
-  <li>
-    <div class="dropdownlink"><i class="fa fa-motorcycle" aria-hidden="true"></i> Action
-      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-    </div>
-    <ul class="submenuItems">
-      <li><a href="#">Action book 1</a></li>
-      <li><a href="#">Action book 2</a></li>
-      <li><a href="#">Action book 3</a></li>
-    </ul>
-  </li>
-</ul>
-</body>
+  </body>
 </html>
