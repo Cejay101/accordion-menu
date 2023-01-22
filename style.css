@@ -20,7 +20,11 @@ a {
   border-radius: 4px;
 }
 .accordion-menu li.open .dropdownlink {
-  color: #ead7d7;
+  color: #ffffff;
+
+  background: #1e0813;
+  transform: scale(1.022);
+  border-radius: 7px;
 }
 .accordion-menu li.open .dropdownlink .fa-chevron-down {
   transform: rotate(180deg);
@@ -33,14 +37,18 @@ a {
   display: block;
   padding: 5px;
   font-size: 18px;
+  
   border-bottom: 1px solid #ead7d7;
   color: #ffffff;
   position: relative;
   transition: all 0.4s ease-out;
 }
+.dropdownlink:hover{
+  transform: scale(1.052);}
 .menu_head {
   display: flex;
   align-items: center;
+  z-index: 1000;
 }
 .dropdownlink i {
   position: absolute;
@@ -54,6 +62,13 @@ a {
   display: none;
   background: #af8fad;
   transition: 3s ease-in-out;
+  animation: anime 0.51s ease-in;
+}
+@keyframes anime {
+  0%{transform:translateY(-100%);opacity: 0;}
+  95%{opacity: 0.2;}
+  100%{transform: translateY(0); opacity: 1;}
+  
 }
 .submenuItems li {
   border-bottom: 1px solid #b6b6b6;
