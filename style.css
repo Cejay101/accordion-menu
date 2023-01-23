@@ -16,15 +16,12 @@ a {
   width: 100%;
   max-width: 350px;
   margin: 2rem auto;
-  background: #412234;
+  background: #6f95bc;
   border-radius: 4px;
 }
 .accordion-menu li.open .dropdownlink {
   color: #ffffff;
-
-  background: #1e0813;
-  transform: scale(1.022);
-  border-radius: 7px;
+  background: #163e67;
 }
 .accordion-menu li.open .dropdownlink .fa-chevron-down {
   transform: rotate(180deg);
@@ -44,11 +41,11 @@ a {
   transition: all 0.4s ease-out;
 }
 .dropdownlink:hover{
-  transform: scale(1.052);}
+  transform: scale(1.05);
+}
 .menu_head {
   display: flex;
   align-items: center;
-  z-index: 1000;
 }
 .dropdownlink i {
   position: absolute;
@@ -60,9 +57,11 @@ a {
 }
 .submenuItems {
   display: none;
-  background: #af8fad;
+  background: #80a7ce;
   transition: 3s ease-in-out;
   animation: anime 0.51s ease-in;
+  font-family: monospace;
+  font-size: 1rem;
 }
 @keyframes anime {
   0%{transform:translateY(-100%);opacity: 0;}
@@ -80,6 +79,6 @@ a {
   transition: all 1s ease-out;
 }
 .submenuItems a:hover {
-  background-color: #5f374d;
-  color: #dcc8db;
+  background-color: #2e5073;
+  color:#fff
 }
