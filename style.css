@@ -40,9 +40,7 @@ a {
   position: relative;
   transition: all 0.4s ease-out;
 }
-.dropdownlink:hover{
-  transform: scale(1.05);
-}
+
 .menu_head {
   display: flex;
   align-items: center;
