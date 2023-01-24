@@ -72,7 +72,7 @@ a {
 }
 .submenuItems a {
   display: block;
-  color: #28121e;
+  color:#163e67;
   padding: 12px 12px 12px 45px;
   transition: all 1s ease-out;
 }
