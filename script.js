@@ -1,20 +1,21 @@
-function accordion(multiple = false) {
+const accordion = function(multiple = false) {
   const accordion = document.querySelector(".accordion-menu");
-  const dropdownlink = accordion.querySelectorAll(".dropdownlink");
-  dropdownlink.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      const next = link.nextElementSibling;
-      next.style.display = next.style.display === "block" ? "none" : "block";
-      link.parentElement.classList.toggle("open");
+  const dropdownHeader = accordion.querySelectorAll(".dropdownHeader");
+  dropdownHeader.forEach((header) => {
+    header.addEventListener("click", (e) => {
+      const submenuItem = header.nextElementSibling;
+      submenuItem.style.display = submenuItem.style.display === "block" ? "none" : "block";
+      header.parentElement.classList.toggle("active");
       if (!multiple) {
         accordion.querySelectorAll(".submenuItems").forEach((submenu) => {
-          if (submenu !== next) {
+          if (submenu !== submenuItem) {
             submenu.style.display = "none";
-            submenu.parentElement.classList.remove("open");
+            submenu.parentElement.classList.remove("active");
           }
         });
       }
     });
   });
-}
+};
 accordion();
+
